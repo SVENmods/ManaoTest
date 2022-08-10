@@ -1,0 +1,164 @@
+@import "nullset.scss";
+
+*{
+     // outline: 1px solid red;
+}
+body{
+     width: 100%;
+     height: 100%;
+     // display: flex;
+     // align-items: center;
+     // justify-content: center;
+     // background-color: #040B2A;
+}
+%style-container{
+     padding: 39px 135px 42px; 
+     font-size: 16px;
+     width: 100%;
+     height: 100%;
+     background-position: 0 0;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+.main-container {
+     @extend %style-container;
+     background-image: url("../resource/img/banner.png");
+}
+.main,.about,.serv,.public,.send{
+     display: flex;
+     font-style: normal;
+}
+.main {
+     display: flex;
+     flex-direction: column;
+     font-family: 'TT Commons', sans-serif;
+     font-weight: 500;
+     font-size: 17px;
+     line-height: 16px;
+     color: #FFFFFF;
+		&__content {
+               display: flex;
+               flex-direction: column;
+		}
+          &__content *{
+               cursor: default;
+		}
+		&__footer {
+               display: flex;
+               flex-direction: row;
+               justify-content: flex-end;
+               align-items: center;
+               margin-top: 97px;
+		}
+		&__footer-text {
+               font-size: 'TT Commons', sans-serif;
+               font-weight: 400;
+               font-size: 17px;
+               line-height: 24px;
+               margin-right: 22px;
+               cursor: default;
+		}
+}
+.header {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+		&__parts {
+               display: flex;
+		}
+}
+.header-logo {
+     img:last-child{
+          margin-left: 9.64px;
+     }
+}
+.header-menu {
+
+		&__links{
+               cursor: pointer;
+               transition: .3s;
+		}
+          &__links:hover{
+               color: #7E779A;
+          }
+          &__links:nth-child(2) {
+               margin: 0px 60px;
+		}
+}
+.header-info {
+     cursor: default;
+		&__tel {
+               letter-spacing: 0.1em;
+               margin-right: 44px;
+		}
+
+		&__mail {
+               letter-spacing: 0.05em;
+		}
+     img{
+          margin-right: 13px;
+     }
+}
+.small-text {
+     display: flex;
+     font-family: 'Pragmatica ExtraLight', sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 26px;
+     letter-spacing: 0.02em;
+     color: #7E779A;
+     margin-top: 144px;
+}
+.h-text {
+     display: flex;
+     font-weight: 700;
+     font-size: 64px;
+     line-height: 70px;
+     max-width: 794px;
+     margin-top: 16px;
+}
+.send-btn {
+     display: flex;
+     background: linear-gradient(105.96deg, #3F0F72 13.07%, #791281 85.2%);
+     border-radius: 90px;
+     width: 333px;
+     height: 56px;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 14px;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     margin-top: 25px;
+}
+.about-container {
+     @extend %style-container;
+}
+.serv-container {
+     @extend %style-container;
+     background: #F6F4F9;
+     transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.public-container{
+     @extend %style-container;
+}
+.send-container{
+     @extend %style-container;
+     background-image: url("../resource/img/sendBG.png");
+}
+.about{
+     height: 100%;
+     border: 1px solid red;
+}
+.serv{
+     height: 100%;
+     border: 1px solid red;
+}
+.public {
+}
+.send {
+}

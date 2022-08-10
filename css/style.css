@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.send-container, .public-container, .serv-container, .about-container, .main-container {
+  padding: 39px 135px 42px;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-container {
+  background-image: url("../resource/img/banner.png");
+}
+
+.main, .about, .serv, .public, .send {
+  display: flex;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: "TT Commons", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+}
+.main__content * {
+  cursor: default;
+}
+.main__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 97px;
+}
+.main__footer-text {
+  font-size: "TT Commons", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  margin-right: 22px;
+  cursor: default;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__parts {
+  display: flex;
+}
+
+.header-logo img:last-child {
+  margin-left: 9.64px;
+}
+
+.header-menu__links {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header-menu__links:hover {
+  color: #7E779A;
+}
+.header-menu__links:nth-child(2) {
+  margin: 0px 60px;
+}
+
+.header-info {
+  cursor: default;
+}
+.header-info__tel {
+  letter-spacing: 0.1em;
+  margin-right: 44px;
+}
+.header-info__mail {
+  letter-spacing: 0.05em;
+}
+.header-info img {
+  margin-right: 13px;
+}
+
+.small-text {
+  display: flex;
+  font-family: "Pragmatica ExtraLight", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #7E779A;
+  margin-top: 144px;
+}
+
+.h-text {
+  display: flex;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  max-width: 794px;
+  margin-top: 16px;
+}
+
+.send-btn {
+  display: flex;
+  background: linear-gradient(105.96deg, #3F0F72 13.07%, #791281 85.2%);
+  border-radius: 90px;
+  width: 333px;
+  height: 56px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.serv-container {
+  background: #F6F4F9;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.send-container {
+  background-image: url("../resource/img/sendBG.png");
+}
+
+.about {
+  height: 100%;
+  border: 1px solid red;
+}
+
+.serv {
+  height: 100%;
+  border: 1px solid red;
+}
