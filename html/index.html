@@ -8,10 +8,11 @@
      <link rel="stylesheet" type="text/css" href="../css/style.css">
      <link href="http://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet">
      <link href="http://fonts.cdnfonts.com/css/pragmatica-extralight" rel="stylesheet">
+     <link href="https://allfont.net/allfont.css?fonts=pragmatica" rel="stylesheet">
      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-     <div class="main-container">
+     <div class="main-container" id="main">
           <div class="main">
                <header class="header">
                     <div class="header__parts header-logo">
@@ -19,10 +20,10 @@
                          <img src="../resource/img/logo.svg" alt="logotext">
                     </div>
                     <div class="header__parts header-menu">
-                         <div class="header-menu__links">О нас</div>
-                         <div class="header-menu__links">Услуги</div>
-                         <div class="header-menu__links">Публикации</div>
-                    </div>
+                         <a class="header-menu__links" href="#about">О нас</a>
+                         <a class="header-menu__links" href="#serv">Услуги</a>
+                         <a class="header-menu__links" href="#public">Публикации</a>
+                    </a>
                     <div class="header__parts header-info">
                          <div class="header-info__tel">
                               <img src="../resource/img/tel.svg" alt="tel">
@@ -48,13 +49,37 @@
           </div>
           
      </div>
-     <div class="about-container">
-          <div class="about"></div>
+     <div class="about-container" id="about">
+          <div class="about">
+               <div class="about__left">
+                    <div class="about-title">О нас</div>
+                    <div class="about-text">
+                         <span>Техподдержка от бесперебойного аутсорс-продакшна</span>
+                         <br><br>
+                         <p>Являясь партнером более 30 агентств, которые доверили нам 
+                              100+ проектов и могут подтвердить качество работы, 
+                              мы сформировали новую услугу, использовав весь опыт, 
+                              накопленный в первом юните. <br>
+                              Manao.Support — это концентрация 
+                              системной работы, четких процессов и регламентов, позволяющих 
+                              минимизировать ситуации, когда исполнители о чем-то забыли, не 
+                              завершили часть задачи или просто некорректно ее поняли.
+                         </p>
+                    </div>
+                    <div class="about-imgs">
+                         <img src="../resource/img/aboutSimg1.png" alt="aboutSimg1">
+                         <img src="../resource/img/aboutSimg2.png" alt="aboutSimg2">
+                    </div>
+               </div>
+               <div class="about__right">
+                    <img src="../resource/img/aboutBimg.png" alt="aboutBimg">
+               </div>
+          </div>
      </div>
-     <div class="serv-container">
+     <div class="serv-container" id="serv">
           <div class="serv"></div>
      </div>
-     <div class="public-container">
+     <div class="public-container" id="public">
           <div class="public"></div>
      </div>
      <div class="send-container">
