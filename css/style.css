@@ -471,3 +471,8 @@ body {
 .right-slide .slide-img {
   background-image: url("../resource/img/pub3.png");
 }
+
+.send {
+  outline: 1px solid red;
+  height: 100%;
+}
