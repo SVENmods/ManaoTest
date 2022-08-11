@@ -5,10 +5,11 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
      <link href="http://fonts.cdnfonts.com/css/tt-commons" rel="stylesheet">
      <link href="http://fonts.cdnfonts.com/css/pragmatica-extralight" rel="stylesheet">
-     <link href="https://allfont.net/allfont.css?fonts=pragmatica" rel="stylesheet">
+     <!-- <link href="https://allfont.net/allfont.css?fonts=pragmatica" rel="stylesheet"> -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
@@ -133,12 +134,53 @@
           </div>
      </div>
      <div class="public-container" id="public">
-          <div class="public"></div>
+          <div class="public">
+               <div class="swiper">
+                    <div class="swiper-wrapper">
+                         <div class="swiper-slide left-slide">
+                              <div class="slide-img"></div>
+                              <div class="slide-container">
+                                   <div class="slide-container__htext"></div>
+                                   <div class="slide-container__mtext"></div>
+                                   <div class="slide-container__divider"></div>
+                                   <div class="slide-container__footer"></div>
+                              </div>
+                         </div>
+                         <div class="swiper-slide middle-slide">
+                              <div class="slide-img"></div>
+                              <div class="slide-container">
+                                   <div class="slide-container__htext"></div>
+                                   <div class="slide-container__mtext"></div>
+                                   <div class="slide-container__divider"></div>
+                                   <div class="slide-container__footer"></div>
+                              </div>
+                         </div>
+                         <div class="swiper-slide right-slide">
+                              <div class="slide-img"></div>
+                              <div class="slide-container">
+                                   <div class="slide-container__htext"></div>
+                                   <div class="slide-container__mtext"></div>
+                                   <div class="slide-container__divider"></div>
+                                   <div class="slide-container__footer"></div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="swiper-button-prev">
+                    <div class="slide-arrow"></div>
+               </div>
+               <div class="swiper-button-next">
+                    <div class="slide-arrow"></div>
+               </div>
+          </div>
      </div>
      <div class="send-container" id="send">
-          <div class="send"></div>
+          <div class="send">
+               
+          </div>
      </div>
      <footer></footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </html>

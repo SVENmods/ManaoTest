@@ -34,3 +34,20 @@ $('a[href*="#"]')
       }
     }
   });
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 10000,
+      desableOnInteraction : false,
+    },
+  });
