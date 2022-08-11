@@ -230,7 +230,6 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      }
 }
 .top-disc {
-     display: flex;
      font-family: $fontPr;
      font-style: normal;
      font-weight: 400;
@@ -273,20 +272,25 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      }
 }
 .public {
+     // outline: 1px solid red;
+     padding-top: 76px;
+     .swiper{
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+     }
+     .swiper-wrapper{
+          margin-top: 40px;
+     }
      .swiper-slide{
+          display: flex;
+          flex-direction: column;
           width: 370px;
           height: 504px;
           background: #F6F4F9;
           border-radius: 9px;
-     }
-     .left-slide{
-          
-     }
-     .right-slide{
-          
-     }
-     .middle-slide{
-          
+          align-items: center;
+          user-select: none;
      }
      .swiper-button-next::after, .swiper-button-prev::after {
           content: "";
@@ -298,7 +302,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           border-radius: 90px;
           filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
           top:auto;
-          margin-top: calc(504px/2 - 49px/2);
+          margin-top: calc(504px/2 + 172px/2);
           margin-right: 100px;
           margin-left: 100px;
      }
@@ -320,6 +324,86 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      .swiper-button-next:hover .slide-arrow{
           background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='9' y1='2.2615' x2='1.97064' y2='9.29086' stroke='%23791281' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='2.14847' y1='9.55646' x2='9.17783' y2='16.5858' stroke='%23791281' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='3.54761' y1='9.29077' x2='17' y2='9.29077' stroke='%23791281' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
      }
+     .slide-img {
+          width: 100%;
+          height: 262px;
+          border-radius: 9px 9px 0px 0px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+     }
+     .slide-container {
+          display: flex;
+          flex-direction: column;
+          width: 321px;
+          text-align: left;
+          &__htext {
+               font-family: $fontTT;
+               font-style: normal;
+               font-weight: 600;
+               font-size: 22px;
+               line-height: 24px;
+               color: #333333;
+               margin-top: 27px;
+               height: 47px;
+          }
+          &__mtext {
+               font-family: $fontPr;
+               font-style: normal;
+               font-weight: 300;
+               font-size: 16px;
+               line-height: 24px;
+               color: #777777;
+               margin: 11px 0px 26px 0px;
+               height: 72px;
+          }
+          &__divider {
+               width: 308px;
+               height: 0px;
+               border-top: 2px solid #EAE8EC;
+          }
+          &__footer {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding-top: 18px;
+          }
+          &__footer-left{
+               display: flex;
+          }
+          &__footer-right {
+               display: flex;
+               span{
+                    font-family: $fontTT;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: #C4C4C4;
+                    margin-left: 7px;
+               }
+          }
+     }
+     .top-disc{
+          margin-top: 13px;
+     }
+     #logoST{
+          margin-left: 6.68px;
+     }
+}
+.left-slide {
+     .slide-img {
+          background-image: url("../resource/img/pub1.png");
+     }
+}
+.middle-slide{
+     .slide-img {
+          background-image: url("../resource/img/pub2.png");
+     }
+}
+.right-slide{
+     .slide-img {
+          background-image: url("../resource/img/pub3.png");
+}
 }
 .send {
 }

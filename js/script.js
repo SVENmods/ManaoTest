@@ -36,10 +36,8 @@ $('a[href*="#"]')
   });
 
   const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -47,7 +45,7 @@ $('a[href*="#"]')
     slidesPerView: 3,
     spaceBetween: 30,
     autoplay: {
-      delay: 10000,
+      delay: 5000,
       desableOnInteraction : false,
     },
   });
