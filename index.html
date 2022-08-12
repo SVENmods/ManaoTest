@@ -231,38 +231,40 @@
                               </div>
                          </div>
                     </div>
-                    <form class="send-form">
+                    <form action="" method="" class="send-form" ><!-- onsubmit="return validate()" -->
                          <div class="send-form__field">
-                              <input type="text"placeholder=" "/>
+                              <input type="text"placeholder=" "/ id="name" data-validate>
                               <label>Ваше имя</label>
+                              <span class="send-form__hint">Обязательно для заполнения!</span>
                          </div>
                          <div class="send-form__field">
-                              <input type="text"placeholder=" "/>
+                              <input type="text"placeholder=" "/ id="site" data-validate>
                               <label>Адрес сайта</label>
+                              <span class="send-form__hint">Обязательно для заполнения!</span>
                          </div>
                          <div class="send-form__field send-textarea">
-                              <textarea type="text"placeholder=" " maxlength="250" wrap="hard"></textarea>
+                              <textarea type="text"placeholder=" " maxlength="250" wrap="hard" id="textdesc"></textarea>
                               <label>Описание задач</label>
                          </div>
                          <label class="send-form__checkbox">
                               <span class="checkbox-label">Мне нужна консультация</span>
-                              <input type="checkbox">
+                              <input type="checkbox" class="checkbox" id="checkbox-cons" value="cons-yes">
                               <span class="checkmark"></span>
                          </label>
                          <label class="send-form__checkbox">
                               <span class="checkbox-label">Подберите для нас тариф</span>
-                              <input type="checkbox">
+                              <input type="checkbox" class="checkbox" id="checkbox-tarif" value="tarif-yes">
                               <span class="checkmark"></span>
                          </label>
                          <label class="send-form__checkbox">
                               <span class="checkbox-label">Готовы предоставить доступ для более детальной оценки</span>
-                              <input type="checkbox">
+                              <input type="checkbox" class="checkbox" id="checkbox-mark" value="mark-yes">
                               <span class="checkmark"></span>
                          </label>
                          <div class="send-form-footer">
                               Нажимая на кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a>
-                              <div class="submit-btn-wrapper">
-                                   <button type="button" class="submit-btn">Отправить заявку</button>
+                              <div class="submit-btn-wrapper"><!-- onclick="getCheckedCheckBoxes()"-->
+                                   <button type="submit" class="submit-btn">Отправить заявку</button>
                               </div>
                          </div>
                     </form>

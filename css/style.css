@@ -486,6 +486,7 @@ body {
   display: flex;
   flex-direction: row;
   cursor: default;
+  justify-content: space-between;
 }
 .send__htext {
   font-family: "TT Commons", sans-serif;
@@ -883,4 +884,26 @@ footer .footer-text span {
   font-weight: 500;
   line-height: 20px;
   margin-left: 46px;
+}
+
+.send-form__field-required .send-form__hint {
+  opacity: 1;
+  z-index: auto;
+}
+
+.send-form__hint {
+  font-family: "Pragmatica ExtraLight", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E779A;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 3px;
+  padding: 0 12px;
+  width: 100%;
+  transition: all 0.3s ease;
 }
