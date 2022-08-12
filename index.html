@@ -207,64 +207,85 @@
      </div>
      <div class="send-container" id="send">
           <div class="send">
-               <div class="send-text-block">
-                    <div class="send__htext">Отправить сайт на оценку</div>
-                    <div class="send__desc">Рассчитать смету? Проконсультировать по <br>проекту? Подписать NDA? Легко!</div>
-                    <div class="send__content">
-                         <div class="send__vertext">
-                              <span>Facebook</span>
-                              <div class="send__dot"></div>
-                              <span>Instagram</span>
-                              <div class="send__dot"></div>
-                              <span>Vkontakte</span>
-                         </div>
-                         <div class="send__maintext">
-                              <span class="send__content-name">Наш адрес</span>
-                              <span class="send__content-text">Минск, Бирюзова 4/5, каб. 4005</span>
-                              <span class="send__content-name">Время работы</span>
-                              <span class="send__content-text">пн-пт, с 9:00 до 18:00</span>
-                              <span class="send__content-name">Звоните</span>
-                              <span class="send__content-text">+7 (495) 128-13-24</span>
-                              <span class="send__content-name">Пишите</span>
-                              <span class="send__content-text">info@manao-team.com<br>@ManaoTeamBot (Telegram, Viber)</span>
+               <div class="send-wrapper">
+                    <div class="send-text-block">
+                         <div class="send__htext">Отправить сайт на оценку</div>
+                         <div class="send__desc">Рассчитать смету? Проконсультировать по <br>проекту? Подписать NDA? Легко!</div>
+                         <div class="send__content">
+                              <div class="send__vertext">
+                                   <span>Facebook</span>
+                                   <div class="send__dot"></div>
+                                   <span>Instagram</span>
+                                   <div class="send__dot"></div>
+                                   <span>Vkontakte</span>
+                              </div>
+                              <div class="send__maintext">
+                                   <span class="send__content-name">Наш адрес</span>
+                                   <span class="send__content-text">Минск, Бирюзова 4/5, каб. 4005</span>
+                                   <span class="send__content-name">Время работы</span>
+                                   <span class="send__content-text">пн-пт, с 9:00 до 18:00</span>
+                                   <span class="send__content-name">Звоните</span>
+                                   <span class="send__content-text">+7 (495) 128-13-24</span>
+                                   <span class="send__content-name">Пишите</span>
+                                   <span class="send__content-text">info@manao-team.com<br>@ManaoTeamBot (Telegram, Viber)</span>
+                              </div>
                          </div>
                     </div>
+                    <form class="send-form">
+                         <div class="send-form__field">
+                              <input type="text"placeholder=" "/>
+                              <label>Ваше имя</label>
+                         </div>
+                         <div class="send-form__field">
+                              <input type="text"placeholder=" "/>
+                              <label>Адрес сайта</label>
+                         </div>
+                         <div class="send-form__field send-textarea">
+                              <textarea type="text"placeholder=" " maxlength="250" wrap="hard"></textarea>
+                              <label>Описание задач</label>
+                         </div>
+                         <label class="send-form__checkbox">
+                              <span class="checkbox-label">Мне нужна консультация</span>
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                         </label>
+                         <label class="send-form__checkbox">
+                              <span class="checkbox-label">Подберите для нас тариф</span>
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                         </label>
+                         <label class="send-form__checkbox">
+                              <span class="checkbox-label">Готовы предоставить доступ для более детальной оценки</span>
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                         </label>
+                         <div class="send-form-footer">
+                              Нажимая на кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a>
+                              <div class="submit-btn-wrapper">
+                                   <button type="button" class="submit-btn">Отправить заявку</button>
+                              </div>
+                         </div>
+                    </form>
                </div>
-               <form class="send-form">
-                    <div class="send-form__field">
-                         <input type="text"placeholder=" "/>
-                         <label>Ваше имя</label>
+               <div class="send-form-divider"></div>
+               <footer>
+                    <div class="footer-cards">
+                         <div class="footer__card visas-hover"></div>
+                         <div class="footer__card visa-hover"></div>
+                         <div class="footer__card paypal-hover"></div>
+                         <div class="footer__card mastercard-hover"></div>
+                         <div class="footer__card mastercardid-hover"></div>
+                         <div class="footer__card belcard-hover"></div>
+                         <div class="footer__card belcardpass-hover"></div>
+                         <div class="footer__card alfa-hover"></div>
                     </div>
-                    <div class="send-form__field">
-                         <input type="text"placeholder=" "/>
-                         <label>Адрес сайта</label>
+                    <div class="footer-text">
+                         <a href="">Политика обработки персональных данных</a>
+                         <span>Manao.Support — «Битриксоиды» до мозга костей :)</span>
                     </div>
-                    <div class="send-form__field send-textarea">
-                         <textarea type="text"placeholder=" " maxlength="250" wrap="hard"></textarea>
-                         <label>Описание задач</label>
-                    </div>
-                    <div class="send-form__checkbox">
-                         <input type="checkbox" id="" name="cons" >
-                         <label for="cons">Мне нужна консультация</label>
-                    </div>
-                    <div class="send-form__checkbox">
-                         <input type="checkbox" id="" name="tarif" >
-                         <label for="tarif">Подберите для нас тариф</label>
-                    </div>
-                    <div class="send-form__checkbox">
-                         <input type="checkbox" id="" name="mark" >
-                         <label for="mark">Готовы предоставить доступ для более детальной оценки</label>
-                    </div>
-                    <div class="send-form-footer">
-                         Нажимая на кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a>
-                         <div class="submit-btn-wrapper">
-                              <button type="button" class="submit-btn">Отправить заявку</button>
-                         </div>
-                    </div>
-               </form>
+               </footer>
           </div>
      </div>
-     <footer></footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
