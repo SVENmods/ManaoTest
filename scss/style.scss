@@ -33,6 +33,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
 .main,.about,.serv,.public,.send{
      display: flex;
      font-style: normal;
+     height: 100%;
 }
 .main {
      display: flex;
@@ -42,10 +43,11 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      font-size: 17px;
      line-height: 16px;
      color: #FFFFFF;
+     height: 100%;
 		&__content {
                display: flex;
                flex-direction: column;
-               height: 100%;
+               flex: 1 0 auto;
 		}
           &__content *{
                cursor: default;
@@ -55,7 +57,8 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                flex-direction: row;
                justify-content: flex-end;
                align-items: center;
-               margin-top: 97px;
+               // margin-top: 97px;
+               flex: 0 0 auto;
 		}
 		&__footer-text {
                font-size: $fontTT;
@@ -72,6 +75,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      width: 100%;
      justify-content: space-between;
      align-items: center;
+     flex: 0 0 auto;
 		&__parts {
                display: flex;
 		}
@@ -274,8 +278,8 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
 }
 .public {
      // outline: 1px solid red;
-     padding-top: 26px;
      .swiper{
+          height: 100%;
           text-align: center;
           align-items: center;
           justify-content: center;
@@ -406,9 +410,6 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           background-image: url("../resource/img/pub3.png");
 }
 }
-.send {
-     height: 100%;
-}
 // .send *{
 //      outline: 1px solid red;
 // }
@@ -421,6 +422,8 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           flex-direction: row;
           cursor: default;
           justify-content: space-between;
+          align-items: center;
+          height: 100%;
      }
      &__htext {
           font-family: $fontTT;
@@ -669,7 +672,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           border-radius: 4px;
      }
      .send-form__checkbox:hover input ~ .checkmark {
-          background: linear-gradient(99.43deg, rgba(63, 15, 114, 0.3) 4.21%, rgba(121, 17, 128, 0.3) 108.65%);
+          background: linear-gradient(99.43deg, rgba(63, 15, 114, 0.4) 4.21%, rgba(121, 17, 128, 0.4) 108.65%);
      }
      .send-form__checkbox input:checked ~ .checkmark {
           background: linear-gradient(99.43deg, #3F0F72 4.21%, #791180 108.65%);
@@ -718,6 +721,7 @@ footer{
                background-size: 100% 100%;
                transition: .3s;
                margin-right: 16px;
+               cursor: pointer;
           }
           .visas-hover{
                width: 37px;

@@ -81,26 +81,29 @@ $('a[href*="#"]')
 }
 
 function getCheckedCheckBoxes() {
-  console.clear();
   var checkboxes = document.getElementsByClassName('checkbox');
-  var checkboxesChecked = []; // можно в массиве их хранить, если нужно использовать 
+  var checkboxesChecked = [];
   for (var index = 0; index < checkboxes.length; index++) {
     if (checkboxes[index].checked) {
-        checkboxesChecked.push(checkboxes[index].value); // положим в массив выбранный
-        console.log(checkboxes[index].value); // делайте что нужно - это для наглядности
+        checkboxesChecked.push(checkboxes[index].value);
+        console.log(checkboxes[index].value);
     }
   }
-  return checkboxesChecked; // для использования в нужном месте
+  return checkboxesChecked;
 }
 
 $(document).ready(function(){
   $('.send-form').submit(function () {
+    console.clear();
     var form = $(this);
     var field = [];
-    form.find('input[data-validate]').each(function () {
-      field.push('input[data-validate]');
+    form.find('[data-validate]').each(function () {
+      field.push('[data-validate]');
       var value = $(this).val(),
           line = $(this).closest('.send-form__field');
+          if(value != ''){
+            console.log(value);
+          }
       for(var i=0;i<field.length;i++) {
         if( !value ) {
           line.addClass('send-form__field-required');
@@ -111,5 +114,8 @@ $(document).ready(function(){
         }
       }
     });
+    getCheckedCheckBoxes();
+    $(".send-form")[0].reset();
+    return false;
   });
 });

@@ -94,6 +94,7 @@ body {
 .main, .about, .serv, .public, .send {
   display: flex;
   font-style: normal;
+  height: 100%;
 }
 
 .main {
@@ -104,11 +105,12 @@ body {
   font-size: 17px;
   line-height: 16px;
   color: #FFFFFF;
+  height: 100%;
 }
 .main__content {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1 0 auto;
 }
 .main__content * {
   cursor: default;
@@ -118,7 +120,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 97px;
+  flex: 0 0 auto;
 }
 .main__footer-text {
   font-size: "TT Commons", sans-serif;
@@ -135,6 +137,7 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  flex: 0 0 auto;
 }
 .header__parts {
   display: flex;
@@ -339,10 +342,8 @@ body {
   cursor: default;
 }
 
-.public {
-  padding-top: 26px;
-}
 .public .swiper {
+  height: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -474,10 +475,6 @@ body {
 }
 
 .send {
-  height: 100%;
-}
-
-.send {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -487,6 +484,8 @@ body {
   flex-direction: row;
   cursor: default;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 .send__htext {
   font-family: "TT Commons", sans-serif;
@@ -765,7 +764,7 @@ body {
   border-radius: 4px;
 }
 .send-form .send-form__checkbox:hover input ~ .checkmark {
-  background: linear-gradient(99.43deg, rgba(63, 15, 114, 0.3) 4.21%, rgba(121, 17, 128, 0.3) 108.65%);
+  background: linear-gradient(99.43deg, rgba(63, 15, 114, 0.4) 4.21%, rgba(121, 17, 128, 0.4) 108.65%);
 }
 .send-form .send-form__checkbox input:checked ~ .checkmark {
   background: linear-gradient(99.43deg, #3F0F72 4.21%, #791180 108.65%);
@@ -817,6 +816,7 @@ footer .footer-cards .footer__card {
   background-size: 100% 100%;
   transition: 0.3s;
   margin-right: 16px;
+  cursor: pointer;
 }
 footer .footer-cards .visas-hover {
   width: 37px;
