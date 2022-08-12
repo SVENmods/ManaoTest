@@ -102,7 +102,7 @@ body {
   flex-direction: column;
   font-family: "TT Commons", sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 16px;
   color: #FFFFFF;
   height: 100%;
@@ -125,7 +125,7 @@ body {
 .main__footer-text {
   font-size: "TT Commons", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 24px;
   margin-right: 22px;
   cursor: default;
@@ -147,6 +147,11 @@ body {
   margin-left: 9.64px;
 }
 
+.header-menu {
+  font-family: "TT Commons", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 16px;
+}
 .header-menu__links {
   display: flex;
   color: #FFFFFF;
@@ -178,19 +183,19 @@ body {
   display: flex;
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #7E779A;
-  margin-top: 144px;
+  margin-top: 9rem;
 }
 
 .h-text {
   display: flex;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 70px;
-  max-width: 794px;
+  max-width: 800px;
   margin-top: 16px;
 }
 
@@ -201,7 +206,7 @@ body {
   width: 333px;
   height: 56px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -238,30 +243,32 @@ body {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-style: normal;
   margin-top: 33px;
+  width: 530px;
 }
 .about__left .about-text span {
   font-family: "Pragmatica", sans-serif;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 44px;
   font-weight: 500;
 }
 .about__left .about-text p {
   font-size: 20px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 .about__left .about-imgs {
   display: flex;
   justify-content: space-between;
-  margin-top: 37px;
+  margin-top: 57px;
 }
 .about__left .about-imgs img {
   display: flex;
   border-radius: 9px;
   max-width: 270px;
   max-height: 196px;
+  margin-right: 30px;
 }
 .about__right {
   display: flex;
@@ -274,7 +281,7 @@ body {
 .top-title {
   font-family: "TT Commons", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 40px;
   cursor: default;
 }
@@ -299,7 +306,7 @@ body {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 24px;
   color: #777777;
   cursor: default;
@@ -330,7 +337,7 @@ body {
 }
 .serv-card__text {
   display: flex;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 22px;
   font-family: "Pragmatica", sans-serif;
   font-weight: bolder;
@@ -414,7 +421,7 @@ body {
   font-family: "TT Commons", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 24px;
   color: #333333;
   margin-top: 27px;
@@ -424,7 +431,7 @@ body {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   color: #777777;
   margin: 11px 0px 26px 0px;
@@ -450,7 +457,7 @@ body {
 .public .slide-container__footer-right span {
   font-family: "TT Commons", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 26px;
   color: #C4C4C4;
   margin-left: 7px;
@@ -490,7 +497,7 @@ body {
 .send__htext {
   font-family: "TT Commons", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 45px;
   color: #FFFFFF;
 }
@@ -498,7 +505,7 @@ body {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 26px;
   color: #7E779A;
   margin-top: 18px;
@@ -527,7 +534,7 @@ body {
   display: flex;
   font-family: "TT Commons", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 18px;
   color: #FFFFFF;
   transition: 0.3s;
@@ -551,14 +558,14 @@ body {
 .send__content-name {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 17px;
   color: #7E779A;
 }
 .send__content-text {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 25px;
   color: #FFFFFF;
   margin: 8px 0px 22px 0px;
@@ -585,7 +592,7 @@ body {
   border-radius: 4px;
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   color: #FFFFFF;
   padding: 0 20px;
@@ -594,49 +601,49 @@ body {
 .send-form__field input:not(:-moz-placeholder-shown) + label {
   top: -20px;
   left: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   transform: translate(0, 0);
   padding: 2px 6px;
 }
 .send-form__field input:not(:-ms-input-placeholder) + label {
   top: -20px;
   left: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   transform: translate(0, 0);
   padding: 2px 6px;
 }
 .send-form__field input:focus + label, .send-form__field input:not(:placeholder-shown) + label {
   top: -20px;
   left: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   transform: translate(0, 0);
   padding: 2px 6px;
 }
 .send-form__field textarea:not(:-moz-placeholder-shown) + label {
   top: -20px;
   left: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   transform: translate(0, 0);
   padding: 2px 6px;
 }
 .send-form__field textarea:not(:-ms-input-placeholder) + label {
   top: -20px;
   left: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   transform: translate(0, 0);
   padding: 2px 6px;
 }
 .send-form__field textarea:focus + label, .send-form__field textarea:not(:placeholder-shown) + label {
   top: -20px;
   left: -6px;
-  font-size: 12px;
+  font-size: 0.75rem;
   transform: translate(0, 0);
   padding: 2px 6px;
 }
 .send-form__field label {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   color: #7E779A;
   pointer-events: none;
@@ -668,7 +675,7 @@ body {
 .send-form__checkbox label {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 18px;
   color: #FFFFFF;
 }
@@ -676,7 +683,7 @@ body {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 14px;
   color: #7E779A;
   display: flex;
@@ -710,7 +717,7 @@ body {
   border-radius: 90px;
   font-family: "TT Commons", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -741,7 +748,7 @@ body {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 18px;
   color: #FFFFFF;
   margin-top: 3px;
@@ -871,7 +878,7 @@ footer .footer-cards .alfa-hover:hover {
 footer .footer-text {
   font-family: "TT Commons", sans-serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #7E779A;
 }
 footer .footer-text a {
@@ -888,13 +895,13 @@ footer .footer-text span {
 
 .send-form__field-required .send-form__hint {
   opacity: 1;
-  z-index: auto;
+  z-index: 3;
 }
 
 .send-form__hint {
   font-family: "Pragmatica ExtraLight", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   color: #7E779A;
   z-index: -1;
@@ -906,4 +913,89 @@ footer .footer-text span {
   padding: 0 12px;
   width: 100%;
   transition: all 0.3s ease;
+}
+
+.popup-back {
+  display: none;
+  position: fixed;
+  margin: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.popup {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+  font-size: 1.625rem;
+  padding: 10px;
+  background-color: #090B32;
+  border: 2px solid #473E69;
+  border-radius: 9px;
+  z-index: 1000000000000000100;
+  color: white;
+}
+.popup__close {
+  display: flex;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 3px;
+  z-index: 100000000000000000;
+}
+.popup__close::after {
+  content: "×";
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 20px;
+  text-align: center;
+}
+.popup__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20%;
+  font-family: "TT Commons", sans-serif;
+}
+.popup__content .header-logo {
+  margin-top: 5%;
+}
+
+.mobile-header {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.mobile-header__parts {
+  display: flex;
+}
+
+.header-imgs {
+  display: none;
+}
+
+.mobile-about-text {
+  display: none;
+}
+
+.send-mobile {
+  display: none;
 }

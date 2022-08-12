@@ -1,8 +1,39 @@
+@media only screen and (max-width : 1900px) {
+     *{
+          color: red !important;
+     }
+     .header-menu{
+          font-size: 1.375rem;
+     }
+     .header-info{
+          font-size: 1.375rem;
+     }
+     .small-text {
+          font-size: 1.375rem;
+     }
+     .h-text {
+          font-size: 4.75rem !important;;
+          max-width: 900px;
+     }
+     .main__footer-text {
+          font-size: 1.375rem;
+          line-height: 24px;
+     }
+     .top-title{
+          font-size: 3.75rem;
+          line-height: 60px;
+     }
+     .about-text span{
+          font-size: 1.875rem;
+          line-height: 44px;
+     }
+     .about-text p{
+          font-size: 1.875rem;
+     }
+}
 @media only screen and (max-width : 1750px) {
-
 }
 @media only screen and (max-width : 1560px) {
-
 }
 @media only screen and (max-width : 1300px) {
 

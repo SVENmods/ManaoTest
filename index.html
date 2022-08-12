@@ -10,6 +10,7 @@
      <!-- <link href="https://allfont.net/allfont.css?fonts=pragmatica" rel="stylesheet"> -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
      <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/media.css">
      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
@@ -36,6 +37,29 @@
                          </div>
                     </div>
                </header>
+               <header class="mobile-header">
+                    <div class="header__parts header-logo">
+                         <div class="header-imgs">
+                              <img src="resource/img/logoIMG.svg" alt="logoIMG">
+                              <img src="resource/img/logo.svg" alt="logotext">
+                         </div>
+                         <div class="header__parts header-info">
+                              <div class="header-info__tel">
+                                   <img src="resource/img/tel.svg" alt="tel">
+                                   <span>+7 (495) 128-13-24</span>
+                              </div>
+                              <div class="header-info__mail">
+                                   <img src="resource/img/mail.svg" alt="mail">
+                                   <span>info@manao-team.com</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="header__parts header-menu">
+                         <a class="header-menu__links" href="#about">О нас</a>
+                         <a class="header-menu__links" href="#serv">Услуги</a>
+                         <a class="header-menu__links" href="#public">Публикации</a>
+                    </div>
+               </header>
                <div class="main__content">
                     <span class="small-text">Верстка. Программирование. Дизайн.</span>
                     <span class="h-text">Техническая поддержка сайтов и корпоративных порталов</span>
@@ -55,7 +79,7 @@
                <div class="about__left">
                     <div class="top-title">О нас</div>
                     <div class="about-text">
-                         <span>Техподдержка от бесперебойного аутсорс-продакшна</span>
+                         <span>Техподдержка от <br class="mobile-about-text">бесперебойного аутсорс-продакшна</span>
                          <br><br>
                          <p>Являясь партнером более 30 агентств, которые доверили нам 
                               100+ проектов и могут подтвердить качество работы, 
@@ -270,6 +294,69 @@
                          </div>
                     </form>
                </div>
+               <div class="send-mobile">
+                    <div class="send-text-block">
+                         <div class="send__htext">Отправить сайт на оценку</div>
+                         <div class="send__desc">Рассчитать смету? Проконсультировать по <br>проекту? Подписать NDA? Легко!</div>
+                    </div>
+                    <form action="" method="" class="send-form" >
+                         <div class="send-form__field">
+                              <input type="text"placeholder=" "/ id="name" data-validate>
+                              <label>Ваше имя</label>
+                              <span class="send-form__hint">Обязательно для заполнения!</span>
+                         </div>
+                         <div class="send-form__field">
+                              <input type="text"placeholder=" "/ id="site" data-validate>
+                              <label>Адрес сайта</label>
+                              <span class="send-form__hint">Обязательно для заполнения!</span>
+                         </div>
+                         <div class="send-form__field send-textarea">
+                              <textarea type="text"placeholder=" " maxlength="250" wrap="hard" id="textdesc" data-validate></textarea>
+                              <label>Описание задач</label>
+                              <span class="send-form__hint">Обязательно для заполнения!</span>
+                         </div>
+                         <label class="send-form__checkbox">
+                              <span class="checkbox-label">Мне нужна консультация</span>
+                              <input type="checkbox" class="checkbox" id="checkbox-cons" value="cons-yes">
+                              <span class="checkmark"></span>
+                         </label>
+                         <label class="send-form__checkbox">
+                              <span class="checkbox-label">Подберите для нас тариф</span>
+                              <input type="checkbox" class="checkbox" id="checkbox-tarif" value="tarif-yes">
+                              <span class="checkmark"></span>
+                         </label>
+                         <label class="send-form__checkbox">
+                              <span class="checkbox-label">Готовы предоставить доступ для более детальной оценки</span>
+                              <input type="checkbox" class="checkbox" id="checkbox-mark" value="mark-yes">
+                              <span class="checkmark"></span>
+                         </label>
+                         <div class="send-form-footer">
+                              <div class="submit-btn-wrapper">
+                                   <button type="submit" class="submit-btn">Отправить заявку</button>
+                              </div>
+                              Нажимая на кнопку, вы соглашаетесь на обработку <a href="">персональных данных</a>
+                         </div>
+                    </form>
+                    <div class="send__content">
+                         <div class="send__maintext">
+                              <span class="send__content-name">Наш адрес</span>
+                              <span class="send__content-text">Минск, Бирюзова 4/5, каб. 4005</span>
+                              <span class="send__content-name">Время работы</span>
+                              <span class="send__content-text">пн-пт, с 9:00 до 18:00</span>
+                              <span class="send__content-name">Звоните</span>
+                              <span class="send__content-text">+7 (495) 128-13-24</span>
+                              <span class="send__content-name">Пишите</span>
+                              <span class="send__content-text">info@manao-team.com<br>@ManaoTeamBot (Telegram, Viber)</span>
+                         </div>
+                         <div class="send__vertext">
+                              <span>Facebook</span>
+                              <div class="send__dot"></div>
+                              <span>Instagram</span>
+                              <div class="send__dot"></div>
+                              <span>Vkontakte</span>
+                         </div>
+                    </div>
+               </div>
                <div class="send-form-divider"></div>
                <footer>
                     <div class="footer-cards">
@@ -287,6 +374,18 @@
                          <span>Manao.Support — «Битриксоиды» до мозга костей :)</span>
                     </div>
                </footer>
+          </div>
+     </div>
+     <div class="popup-back">
+          <div class="popup">
+               <div class="popup__close"></div>
+               <div class="popup__content">
+                    <span>Ваша заявка успешно отрпавлена!</span>
+                    <div class="header__parts header-logo">
+                         <img src="resource/img/logoIMG.svg" alt="logoIMG">
+                         <img src="resource/img/logo.svg" alt="logotext">
+                    </div>
+               </div>
           </div>
      </div>
 </body>

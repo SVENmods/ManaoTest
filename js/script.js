@@ -48,6 +48,17 @@ $('a[href*="#"]')
       delay: 5000,
       desableOnInteraction : false,
     },
+    breakpoints: {
+      320:{
+        slidesPerView: 1,
+      },
+      480:{
+        slidesPerView: 2,
+      },
+      768:{
+        slidesPerView: 2,
+      },
+    }
   });
 
   function validate(){
@@ -92,6 +103,41 @@ function getCheckedCheckBoxes() {
   return checkboxesChecked;
 }
 
+// function openPopup(elem) {
+//   $(elem).next().fadeIn(200);
+//   $(elem).next().siblings(".popup").hide();
+//   $('body').css('overflow', 'hidden');
+// };
+
+// function closePopup() {
+//   $('.popup-back').fadeOut(300);
+//   $('body').css('overflow', 'visible');
+// };
+
+// $('.popup-back, .popup__close').click(function(e) { // при клике проверяем 
+//   if(e.target.className != 'popup') { // что кликнули не по самому окну
+//       closePopup(); // и тогда вызываем функцию закрытия окна
+//   }
+// });
+
+function openPopup() {
+  $('.popup-back').fadeIn(300);
+  // $(elem).next().fadeIn(200);
+  // $(elem).next().siblings(".popup").hide();
+  $('body').css('overflow', 'hidden');
+}
+
+function closePopup() {
+  $('.popup-back').fadeOut(300);
+  $('body').css('overflow', 'visible');
+}
+
+$('.popup-back, .popup__close').click(function(e) { // при клике проверяем 
+  if(e.target.className != 'popup') { // что кликнули не по самому окну
+      closePopup(); // и тогда вызываем функцию закрытия окна
+  }
+})
+
 $(document).ready(function(){
   $('.send-form').submit(function () {
     console.clear();
@@ -103,6 +149,7 @@ $(document).ready(function(){
           line = $(this).closest('.send-form__field');
           if(value != ''){
             console.log(value);
+            openPopup();
           }
       for(var i=0;i<field.length;i++) {
         if( !value ) {

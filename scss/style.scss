@@ -40,7 +40,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      flex-direction: column;
      font-family: $fontTT;
      font-weight: 500;
-     font-size: 17px;
+     font-size: 1.0625rem;
      line-height: 16px;
      color: #FFFFFF;
      height: 100%;
@@ -57,13 +57,12 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                flex-direction: row;
                justify-content: flex-end;
                align-items: center;
-               // margin-top: 97px;
                flex: 0 0 auto;
 		}
 		&__footer-text {
                font-size: $fontTT;
                font-weight: 400;
-               font-size: 17px;
+               font-size: 1.0625rem;
                line-height: 24px;
                margin-right: 22px;
                cursor: default;
@@ -86,6 +85,9 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      }
 }
 .header-menu {
+     font-family: $fontTT;
+     font-size: 1.0625rem;
+     line-height: 16px;
 		&__links{
                display: flex;
                color: #FFFFFF;
@@ -117,18 +119,18 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      display: flex;
      font-family: $fontPr;
      font-weight: 400;
-     font-size: 18px;
+     font-size: 1.125rem;
      line-height: 26px;
      letter-spacing: 0.02em;
      color: #7E779A;
-     margin-top: 144px;
+     margin-top: 9rem;
 }
 .h-text {
      display: flex;
      font-weight: 700;
-     font-size: 64px;
+     font-size: 4rem;
      line-height: 70px;
-     max-width: 794px;
+     max-width: 800px;
      margin-top: 16px;
 }
 .send-btn {
@@ -138,7 +140,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      width: 333px;
      height: 56px;
      font-weight: 600;
-     font-size: 16px;
+     font-size: 1rem;
      line-height: 14px;
      letter-spacing: 0.1em;
      text-transform: uppercase;
@@ -178,29 +180,31 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                font-family: $fontPr;
                font-style: normal;
                margin-top: 33px;
+               width: 530px;
                span{
                     font-family: 'Pragmatica', sans-serif;
                     font-weight: bolder;
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     line-height: 44px;
                     font-weight: 500;
                }
                p{
                     font-size: 20px;
                     font-weight: 400;
-                    font-size: 16px;
+                    font-size: 1rem;
                     line-height: 24px;
                }
           }
           .about-imgs{
                display: flex;
                justify-content: space-between;
-               margin-top: 37px;
+               margin-top: 57px;
                img{
                     display: flex;
                     border-radius: 9px;
                     max-width: 270px;
                     max-height: 196px;
+                    margin-right: 30px;
                }
           }
      }
@@ -215,7 +219,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
 .top-title{
      font-family: $fontTT;
      font-weight: 700;
-     font-size: 48px;
+     font-size: 3rem;
      line-height: 40px;
      cursor: default;
 }
@@ -238,7 +242,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      font-family: $fontPr;
      font-style: normal;
      font-weight: 400;
-     font-size: 18px;
+     font-size: 1.125rem;
      line-height: 24px;
      color: #777777;
      cursor: default;
@@ -264,7 +268,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      }
      &__text {
           display: flex;
-          font-size: 15px;
+          font-size: .9375rem;
           line-height: 22px;
           font-family: 'Pragmatica', sans-serif;
           font-weight: bolder;
@@ -346,7 +350,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                font-family: $fontTT;
                font-style: normal;
                font-weight: 600;
-               font-size: 22px;
+               font-size: 1.375rem;
                line-height: 24px;
                color: #333333;
                margin-top: 27px;
@@ -356,7 +360,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                font-family: $fontPr;
                font-style: normal;
                font-weight: 300;
-               font-size: 16px;
+               font-size: 1rem;
                line-height: 24px;
                color: #777777;
                margin: 11px 0px 26px 0px;
@@ -381,7 +385,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                span{
                     font-family: $fontTT;
                     font-weight: 500;
-                    font-size: 15px;
+                    font-size: .9375rem;
                     line-height: 26px;
                     color: #C4C4C4;
                     margin-left: 7px;
@@ -428,7 +432,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      &__htext {
           font-family: $fontTT;
           font-weight: 700;
-          font-size: 48px;
+          font-size: 3rem;
           line-height: 45px;
           color: #FFFFFF;
           
@@ -437,7 +441,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           font-family: $fontPr;
           font-style: normal;
           font-weight: 400;
-          font-size: 18px;
+          font-size: 1.125rem;
           line-height: 26px;
           color: #7E779A;
           margin-top: 18px;
@@ -462,7 +466,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                display: flex;
                font-family: $fontTT;
                font-weight: 600;
-               font-size: 16px;
+               font-size: 1rem;
                line-height: 18px;
                color: #FFFFFF;
                transition: .3s;
@@ -487,14 +491,14 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      &__content-name {
           font-family: $fontPr;
           font-weight: 300;
-          font-size: 14px;
+          font-size: .875rem;
           line-height: 17px;
           color: #7E779A;
      }
      &__content-text {
           font-family: $fontPr;
           font-weight: 700;
-          font-size: 22px;
+          font-size: 1.375rem;
           line-height: 25px;
           color: #FFFFFF;
           margin: 8px 0px 22px 0px;
@@ -521,7 +525,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                border-radius: 4px;
                font-family: $fontPr;
                font-weight: 300;
-               font-size: 16px;
+               font-size: 1rem;
                line-height: 19px;
                color: #FFFFFF;
                padding:0 20px;
@@ -530,21 +534,21 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           input:focus + label, input:not(:placeholder-shown) + label{
                top:-20px;
                left:-6px;
-               font-size:12px;
+               font-size: .75rem;
                transform:translate(0,0);
                padding:2px 6px;
           }
           textarea:focus + label, textarea:not(:placeholder-shown) + label{
                top:-20px;
                left:-6px;
-               font-size:12px;
+               font-size: .75rem;
                transform:translate(0,0);
                padding:2px 6px;
           }
           label{
                font-family: $fontPr;
                font-weight: 300;
-               font-size: 16px;
+               font-size: 1rem;
                line-height: 19px;
                color: #7E779A;
                pointer-events:none;
@@ -578,7 +582,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           label{
                font-family: $fontPr;
                font-weight: 300;
-               font-size: 15px;
+               font-size: .9375rem;
                line-height: 18px;
                color: #FFFFFF;
           }
@@ -587,7 +591,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           font-family: $fontPr;
           font-style: normal;
           font-weight: 400;
-          font-size: 12px;
+          font-size: .75rem;
           line-height: 14px;
           color: #7E779A;
           display: flex;
@@ -621,7 +625,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           border-radius: 90px;
           font-family: $fontTT;
           font-weight: 600;
-          font-size: 14px;
+          font-size: .875rem;
           line-height: 14px;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -649,7 +653,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           font-family: $fontPr;
           font-style: normal;
           font-weight: 300;
-          font-size: 15px;
+          font-size: .9375rem;
           line-height: 18px;
           color: #FFFFFF;
           margin-top: 3px;
@@ -777,7 +781,7 @@ footer{
      .footer-text {
           font-family: $fontTT;
           font-style: normal;
-          font-size: 15px;
+          font-size: .9375rem;
           color: #7E779A;
           a{
                font-weight: 400;
@@ -794,12 +798,12 @@ footer{
 }
 .send-form__field-required .send-form__hint {
      opacity: 1;
-     z-index: auto;
+     z-index: 3;
 }
 .send-form__hint {
      font-family: $fontPr;
      font-weight: 300;
-     font-size: 14px;
+     font-size: .875rem;
      line-height: 16px;
      color: #7E779A;
      z-index: -1;
@@ -812,6 +816,83 @@ footer{
      width: 100%;
      transition: all .3s ease;
 }
-
-
-
+.popup-back {
+     display: none;
+     position: fixed;
+     margin: 0px;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.3);
+     z-index: 10;
+}
+.popup {
+     display: flex;
+     position: fixed;
+     flex-direction: column;
+     align-items: flex-end;
+     top: 0px;
+     left: 0px;
+     bottom: 0px;
+     right: 0px;
+     margin: auto;
+     width: 400px;
+     height: 250px;
+     font-size: 1.625rem;
+     padding: 10px;
+     background-color: #090B32;
+     border: 2px solid #473E69;
+     border-radius: 9px;
+     z-index: 999999999999999999;
+     color: white;
+     &__close {
+          display: flex;
+          cursor: pointer;
+          height: 20px;
+          width: 20px;
+          text-align: center;
+          font-weight: bold;
+          border-radius: 3px;
+          z-index: 100000000000000000;
+     }
+     &__close::after{
+          content: "\d7";
+          font-size: 1.25rem; 
+          color: #ffffff;
+          line-height: 20px;
+          text-align: center;
+     }
+     &__content{
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 20%;
+          font-family: $fontTT;
+          .header-logo{
+               margin-top: 5%;
+          }
+     }
+}
+// mobile
+.mobile-header{
+     display: none;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+     flex: 0 0 auto;
+		&__parts {
+               display: flex;
+		}
+}
+.header-imgs{
+     display: none;
+}
+.mobile-about-text{
+     display: none;
+}
+.send-mobile{
+     display: none;
+}
