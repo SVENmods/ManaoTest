@@ -28,7 +28,7 @@ $fontTT: 'TT Commons', sans-serif;
 $fontPr: 'Pragmatica ExtraLight', sans-serif;
 .main-container {
      @extend %style-container;
-     background-image: url("../resource/img/banner.png");
+     background-image: url("../resource/img/banner.webp");
 }
 .main,.about,.serv,.public,.send{
      display: flex;
@@ -179,7 +179,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
 }
 .send-container{
      @extend %style-container;
-     background-image: url("../resource/img/sendBG.png");
+     background-image: url("../resource/img/sendBG.webp");
 }
 .about{
      height: 100%;
@@ -418,17 +418,17 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
 }
 .left-slide {
      .slide-img {
-          background-image: url("../resource/img/pub1.png");
+          background-image: url("../resource/img/pub1.webp");
      }
 }
 .middle-slide{
      .slide-img {
-          background-image: url("../resource/img/pub2.png");
+          background-image: url("../resource/img/pub2.webp");
      }
 }
 .right-slide{
      .slide-img {
-          background-image: url("../resource/img/pub3.png");
+          background-image: url("../resource/img/pub3.webp");
 }
 }
 // .send *{

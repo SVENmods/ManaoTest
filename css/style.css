@@ -88,7 +88,7 @@ body {
 }
 
 .main-container {
-  background-image: url("../resource/img/banner.png");
+  background-image: url("../resource/img/banner.webp");
 }
 
 .main, .about, .serv, .public, .send {
@@ -252,7 +252,7 @@ body {
 }
 
 .send-container {
-  background-image: url("../resource/img/sendBG.png");
+  background-image: url("../resource/img/sendBG.webp");
 }
 
 .about {
@@ -500,15 +500,15 @@ body {
 }
 
 .left-slide .slide-img {
-  background-image: url("../resource/img/pub1.png");
+  background-image: url("../resource/img/pub1.webp");
 }
 
 .middle-slide .slide-img {
-  background-image: url("../resource/img/pub2.png");
+  background-image: url("../resource/img/pub2.webp");
 }
 
 .right-slide .slide-img {
-  background-image: url("../resource/img/pub3.png");
+  background-image: url("../resource/img/pub3.webp");
 }
 
 .send {
