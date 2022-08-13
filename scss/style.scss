@@ -118,6 +118,9 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      img{
           margin-right: 13px;
      }
+     a{
+          color: #FFFFFF;
+     }
 }
 .small-text {
      display: flex;
@@ -274,6 +277,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      border-radius: 9px;
      justify-content: space-between;
      padding: 0px 30px 0px 29px;
+     transition: .6s;
      &__circle {
           display: flex;
           width: 66px;
@@ -297,6 +301,9 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           cursor: default;
      }
 }
+.serv-card:hover{
+     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+}
 .public {
      // outline: 1px solid red;
      .swiper{
@@ -317,6 +324,10 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           border-radius: 9px;
           align-items: center;
           user-select: none;
+          transition: .6s;
+     }
+     .swiper-slide:hover{
+          filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.1));
      }
      .swiper-button-next::after, .swiper-button-prev::after {
           content: "";
@@ -479,7 +490,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           max-height: 18px;
           top: 150px;
           left: -5px;
-          span{
+          a{
                display: flex;
                font-family: $fontTT;
                font-weight: 600;
@@ -488,7 +499,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                color: #FFFFFF;
                transition: .3s;
           }
-          span:hover{
+          a:hover{
                color: #7E779A;
                cursor: pointer;
           }
@@ -504,6 +515,7 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           display: flex;
           flex-direction: column;
           margin-left: 29px;
+
      }
      &__content-name {
           font-family: $fontPr;
@@ -519,6 +531,9 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           line-height: 25px;
           color: #FFFFFF;
           margin: 8px 0px 22px 0px;
+     }
+     &__content-text:last-child{
+          margin: -12px 0px 0px 0px;
      }
 }
 .send-text-block, .send-form{
@@ -915,7 +930,7 @@ footer{
      bottom: 12vh;
      right: 10vw;
      display: none;
-     background-color: #FFFFFF;
+     background-color: transparent;
      transition: .3s;
      z-index: 10;
      border: 1px solid #791281;
@@ -933,7 +948,7 @@ footer{
 }
 .scrollup:hover{
      background-color: #791281;
-     border: 1px solid #FFFFFF;
+     border: 1px solid #D3D0D6;
 }
 body{
      overflow: overlay;

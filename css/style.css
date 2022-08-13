@@ -182,6 +182,9 @@ body {
 .header-info img {
   margin-right: 13px;
 }
+.header-info a {
+  color: #FFFFFF;
+}
 
 .small-text {
   display: flex;
@@ -355,6 +358,7 @@ body {
   border-radius: 9px;
   justify-content: space-between;
   padding: 0px 30px 0px 29px;
+  transition: 0.6s;
 }
 .serv-card__circle {
   display: flex;
@@ -379,6 +383,10 @@ body {
   cursor: default;
 }
 
+.serv-card:hover {
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.2));
+}
+
 .public .swiper {
   height: 100%;
   text-align: center;
@@ -400,6 +408,10 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  transition: 0.6s;
+}
+.public .swiper-slide:hover {
+  filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.1));
 }
 .public .swiper-button-next::after, .public .swiper-button-prev::after {
   content: "";
@@ -560,7 +572,7 @@ body {
   top: 150px;
   left: -5px;
 }
-.send__vertext span {
+.send__vertext a {
   display: flex;
   font-family: "TT Commons", sans-serif;
   font-weight: 600;
@@ -569,7 +581,7 @@ body {
   color: #FFFFFF;
   transition: 0.3s;
 }
-.send__vertext span:hover {
+.send__vertext a:hover {
   color: #7E779A;
   cursor: pointer;
 }
@@ -599,6 +611,9 @@ body {
   line-height: 25px;
   color: #FFFFFF;
   margin: 8px 0px 22px 0px;
+}
+.send__content-text:last-child {
+  margin: -12px 0px 0px 0px;
 }
 
 .send-text-block, .send-form {
@@ -1033,7 +1048,7 @@ footer .footer-text span {
   bottom: 12vh;
   right: 10vw;
   display: none;
-  background-color: #FFFFFF;
+  background-color: transparent;
   transition: 0.3s;
   z-index: 10;
   border: 1px solid #791281;
@@ -1052,7 +1067,7 @@ footer .footer-text span {
 
 .scrollup:hover {
   background-color: #791281;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #D3D0D6;
 }
 
 body {
