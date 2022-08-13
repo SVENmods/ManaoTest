@@ -48,6 +48,10 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                display: flex;
                flex-direction: column;
                flex: 1 0 auto;
+               .submit-btn-wrapper{
+                    padding: 3px;
+                    margin-left: 0px;
+               }
 		}
           &__content *{
                cursor: default;
@@ -134,9 +138,6 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      margin-top: 16px;
 }
 .send-btn {
-     display: flex;
-     background: linear-gradient(105.96deg, #3F0F72 13.07%, #791281 85.2%);
-     border-radius: 90px;
      width: 333px;
      height: 56px;
      font-weight: 600;
@@ -149,6 +150,22 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
      cursor: pointer;
      margin-top: 25px;
      color:#FFFFFF;
+     display: flex;
+     background: linear-gradient(105.96deg, #3F0F72 13.07%, #791281 85.2%);
+     border-radius: 90px;
+     animation: gradient 4s infinite linear;
+     background-size: 400%;
+}
+@keyframes gradient {
+     0% {
+          background-position: 80% 0%;
+     }
+     50% {
+          background-position: 20% 100%;
+     }
+     100% {
+          background-position: 80% 0%;
+     }
 }
 .about-container {
      @extend %style-container;
@@ -604,39 +621,6 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
                text-underline-offset: 3px;
           }
      }
-     .submit-btn-wrapper{
-          display: flex;
-          max-width: 226px;
-          height: 56px;
-          border-radius: 90px;
-          position: relative;
-          padding: 3px;
-          background: linear-gradient(99.43deg, #3F0F72 4.21%, #791180 108.65%);
-          align-items: center;
-          justify-content: center;
-          margin-left: 10px;
-     }
-     .submit-btn{
-          display: flex;
-          width: 226px;
-          height: 50px;
-          background: transparent;
-          transition: .3s;
-          border-radius: 90px;
-          font-family: $fontTT;
-          font-weight: 600;
-          font-size: .875rem;
-          line-height: 14px;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #FFFFFF;
-          justify-content: center;
-          align-items: center;
-          padding: calc((56px - 14px)/2) 0px;
-     }
-     .submit-btn:hover{
-          background: #170c49;
-     }
      .send-form__checkbox {
           display: flex;
           position: relative;
@@ -698,6 +682,39 @@ $fontPr: 'Pragmatica ExtraLight', sans-serif;
           border-width: 0 3px 3px 0;
           transform: rotate(45deg);
      }
+}
+.submit-btn-wrapper{
+     display: flex;
+     max-width: 226px;
+     height: 56px;
+     border-radius: 90px;
+     position: relative;
+     padding: 3px;
+     background: linear-gradient(99.43deg, #3F0F72 4.21%, #791180 108.65%);
+     align-items: center;
+     justify-content: center;
+     margin-left: 10px;
+}
+.submit-btn{
+     display: flex;
+     width: 226px;
+     height: 50px;
+     background: transparent;
+     transition: .3s;
+     border-radius: 90px;
+     font-family: $fontTT;
+     font-weight: 600;
+     font-size: .875rem;
+     line-height: 14px;
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     color: #FFFFFF;
+     justify-content: center;
+     align-items: center;
+     padding: calc((56px - 14px)/2) 0px;
+}
+.submit-btn:hover{
+     background: #170c49;
 }
 .send-form-divider{
      width: 100%;
@@ -887,12 +904,43 @@ footer{
                display: flex;
 		}
 }
-.header-imgs{
+.header-imgs, .mobile-about-text, .send-mobile{
      display: none;
 }
-.mobile-about-text{
+.scrollup {
+     width: 40px;
+     height: 40px;
+     opacity: 0.9;
+     position: fixed;
+     bottom: 12vh;
+     right: 10vw;
      display: none;
+     background-color: #FFFFFF;
+     transition: .3s;
+     transform: rotate(90deg);
+     z-index: 10;
+     border: 1px solid #791281;
+     border-radius: 90%;
+     justify-content: center;
+     align-items: center;
 }
-.send-mobile{
-     display: none;
+.scrollup:hover{
+     background-color: #791281;
+     border: 1px solid #FFFFFF;
+}
+body{
+     overflow: overlay;
+}
+::-webkit-scrollbar-track{
+	border-radius: 30px;
+	background-color: transparent;
+}
+::-webkit-scrollbar{
+	width: 0.6vw;
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	// *background-color: rgb(45, 45, 45); default
+     background-color: #9f21a8;
 }

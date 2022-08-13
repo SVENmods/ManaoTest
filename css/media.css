@@ -235,6 +235,7 @@
   }
   .send-mobile .submit-btn-wrapper{
     margin-bottom: 2vh;
+    margin-left: 0px;
   }
   .send-mobile .send__content{
     flex-direction: column;

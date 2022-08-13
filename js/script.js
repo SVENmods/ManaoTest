@@ -169,3 +169,22 @@ $(document).ready(function(){
     return false;
   });
 });
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+      $('.scrollup').css('display', 'flex');
+    } else {
+      $('.scrollup').fadeOut();
+      $('.scrollup').css('display', 'none');
+    }
+  });
+
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+});
