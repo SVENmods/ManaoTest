@@ -1,34 +1,27 @@
-// Select all links with hashes
+
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
-    // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) {
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1');
+            $target.focus();
           };
         });
       }
@@ -106,28 +99,12 @@ function getCheckedCheckBoxes() {
   return checkboxesChecked;
 }
 
-// function openPopup(elem) {
-//   $(elem).next().fadeIn(200);
-//   $(elem).next().siblings(".popup").hide();
-//   $('body').css('overflow', 'hidden');
-// };
-
-// function closePopup() {
-//   $('.popup-back').fadeOut(300);
-//   $('body').css('overflow', 'visible');
-// };
-
-// $('.popup-back, .popup__close').click(function(e) { // при клике проверяем 
-//   if(e.target.className != 'popup') { // что кликнули не по самому окну
-//       closePopup(); // и тогда вызываем функцию закрытия окна
-//   }
-// });
-
 function openPopup() {
   $('.popup-back').fadeIn(300);
   // $(elem).next().fadeIn(200);
   // $(elem).next().siblings(".popup").hide();
   $('body').css('overflow', 'hidden');
+  $(".send-form")[0].reset();
 }
 
 function closePopup() {
@@ -135,9 +112,9 @@ function closePopup() {
   $('body').css('overflow', 'visible');
 }
 
-$('.popup-back, .popup__close').click(function(e) { // при клике проверяем 
-  if(e.target.className != 'popup') { // что кликнули не по самому окну
-      closePopup(); // и тогда вызываем функцию закрытия окна
+$('.popup-back, .popup__close').click(function(e) { 
+  if(e.target.className != 'popup') {
+      closePopup();
   }
 })
 
@@ -165,7 +142,6 @@ $(document).ready(function(){
       }
     });
     getCheckedCheckBoxes();
-    $(".send-form")[0].reset();
     return false;
   });
 });
