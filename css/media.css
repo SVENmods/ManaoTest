@@ -193,12 +193,12 @@
   /* !public */
   .swiper-button-prev,.swiper-button-next {
     top:auto;
-    margin-top: calc(504px/2 + 172px/2 + 100px) !important;
+    margin-top: calc(504px/2 + 172px/2 + 6vh) !important;
     margin-right: 0px !important;
     margin-left: 0px !important;
   }
   .swiper{
-    margin-top: 100px;
+    margin-top: 6vh;
   }
   /* !send */
   .send-container {
