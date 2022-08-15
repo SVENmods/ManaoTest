@@ -104,7 +104,6 @@ function openPopup() {
   // $(elem).next().fadeIn(200);
   // $(elem).next().siblings(".popup").hide();
   $('body').css('overflow', 'hidden');
-  $(".send-form")[0].reset();
 }
 
 function closePopup() {
@@ -142,6 +141,7 @@ $(document).ready(function(){
       }
     });
     getCheckedCheckBoxes();
+    $(".send-form")[0].reset();
     return false;
   });
 });
